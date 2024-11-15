@@ -24,6 +24,7 @@
  
  		# (2.1) creem el string de la consulta (query)
  		$consultaOptions = "SELECT DISTINCT Continent FROM country ORDER BY Continent asc;";
+		$continentArr = [];
 		if (isset($_POST["continent"])) {
 			$continentArr = $_POST["continent"];
             $llistatContinents = implode("','", $continentArr);
